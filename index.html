@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikayat</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add a class to highlight the active link */
+        .active-link {
+            font-weight: bold;
+            color: #3498db; /* Change the color as needed */
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Highlight the active link based on scroll position
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+
+                    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active-link');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active-link');
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+    <header>
+        <h1>Teks Hikayat</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href=#teks>Teks Hikayat</a></li>
+
+            <li><a href=#struktur>Struktur</a></li>
+            <li><a href=#kelompok>kelompok</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="teks">
+            <h2>Teks Hikayat</h2>
+            <h3>PENGERTIAN HIKAYAT</h3> 
+
+<p>Secara harfiah hikayat memiliki arti yang sama  dengan kenang-kenangan. Yang memiliki maksud  sebuah karya yang menjadi kenangan atau sebagai riwayat dari buah pemikiran sang pujangga kepada orang lain.
+
+Sedangkan dalam bahasa Arab, hikayat berasal dari  hikayah yang memiliki arti kisah, dongeng atau cerita.  Hikayat ini adalah dongeng yang umumnya  diceritakan dalam bahasa Melayu. Tema yang  diangkat ke dalam karya sastra hikayat ini pada  umumnya mengisahkan tentang kepahlawanan atau  kehebatan seseorang dengan keajaiban dan  mukjizatnya.</p>
+            <h3>Indera Bangsawan</h3>
+            <p>
+
+                Di sebuah kerajaan, Raja Indera Bungsu memiliki dua anak kembar yang bernama Syahpri dan Indera Bangsawan. Kedua anak lelaki itu mendapatkan kasih sayang penuh dari Sang Raja. Mereka tumbuh sebagai pemuda yang baik, tanggung, dan sakti.
+                
+                Pada suatu waktu, Raja Indera Bungsu mulai bingung siapa di antara kedua anak lelakinya yang akan menggantikannya sebagai seorang Raja. Hingga suatu malam, Raja bermimpi dengan buluh perindu, yaitu semacam alat musik yang memiliki suara merdu. Raja sangat terpesona dengan buluh perindu, hingga Sang Raja mengadakan sayembara, barang siapa yang bisa membawa pulang buluh perindu, ia akan menjadi seorang raja.
+                
+                Kedua anak lelaki raja berangkat untuk mencari buluh perindu. Mereka berdua terpisah dikarenakan badai besar. Syahpri berada disebuah taman dan menemukan gendang. Dalam gendang, bersembunyi seorang Putri Ratna Sari yang diculik oleh garuda. Singkatnya, Syahpri menikahi Putri Ratna Sari.
+                
+                Saudara kembar lainnya, Indera Bangsawan tersesat dalam gua yang berpenghuni raksasa perempuan. Karena ketangguhan dan kesaktian Indera, raksasa akhirnya dapat ditaklukan oleh Indera, raksasa memberikan ajimat untuk Indera. Dalam perjalanannya, Indera mendapatkan seorang istri sebagai hadiah sayembara yang ia menangkan. Indera juga berhasil mendapatkan buluh perindu.
+                
+                Ketika Indera dan istrinya pulang ke negerinya, mereka diserang oleh Buraksa hingga mereka sakit keras. Mendengar hal itu, Syahpri menyusul saudaranya dan membawa pulang untuk diobati hingga sembuh. Indera mendapatkan tahta sebagai raja karena mampu membawa buluh perindu pulang.
+                
+                Sebagai balas budi, indera memberikan ajimat kepada saudara kembarnya, yang bisa digunakan untuk membangun kerajaan dan semua perlengkapannya. Seiring berjalan waktu, kedua negara hidup damai dan saling membantu.</p>
+        </section>
+        <section id="struktur">
+            <h2>Struktur</h2>
+            <div class="sub-section">
+                <h3>Abstraksi : </h3>
+                <p>Pengertian abstraksi : Abstraksi yang ada di dalam teks hikayat berisi mengenai sebuah inti cerita yang nantinya akan  dikembangkan menjadi berbagai macam peristiwa. Pada umumnya, abstraksi sering disebut sebagai  gambaran yang ada di dalam cerita.
+
+                    <h4>JAWABAN :</h4>
+                    
+                    Menceritakan tentang  dua anak kembar, Syahpri dan Indera Bangsawan, yang mencari buluh perindu untuk menjadi raja pengganti ayah mereka. Setelah petualangan terpisah, Syahpri menikahi Putri Ratna Sari yang diselamatkan dari dalam gendang, sementara Indera Bangsawan mengalahkan raksasa perempuan dan memenangkan buluh perindu. Keduanya menghadapi serangan Buraksa, dan dengan pertolongan Syahpri, Indera menjadi raja. Sebagai balas budi, Indera memberikan ajimat kepada saudaranya, dan akhirnya, kedua negara hidup dalam damai dan saling bantu-membantu.
+                    </p>
+            </div>
+            <div class="sub-section">
+                <h3>Orientasi : </h3>
+                <p>Pengertian orientasi : Orientasi adalah salah satu struktur bagian yang ada di dalam teks hikayat yang berisikan mengenai  keterangan waktu, suasana, dan tempat yang ada di dalam cerita tersebut.
+
+                    <h4>JAWABAN :</h4>
+                    
+                    1. Di sebuah kerajaan yang dipimpin oleh Raja Indera Bungsu. 
+                    
+                    2. Hingga suatu malam Raja bermimpi dengan buluh perindu, yaitu semacam alat musik yang memiliki suara merdu. 
+                    
+                    3. Kedua anak lelaki Raja berangkat untuk mencari buluh perindu. Mereka berdua terpisah dikarenakan Badai besar
+                    
+                    4. Saudara kembar lainnya, Indera Bangsawan tersesat dalam gua yang berpenghuni raksasa perempuan. 
+                    
+                    5. Seiring berjalan waktu, kedua negara hidup damai dan saling membantu.
+                    </p>
+
+            </div>
+            <div class="sub-section">
+                <h3>Komplikasi : </h3>
+                <p>Pengertian komplikasi : komplikasi berisikan mengenai urutan dalam berbagai peristiwa yang  dihubungkan sesuai dengan sebab dan akibat.
+
+                    <h4>Jawaban :</h4> 
+                    
+                    1. Berawal dari Raja Indera bungsu yang bermimpi tentang buluh perindu yang membuat sangat Raja mengadakan sayembara. Hal ini mengakibatkan persaingan antara kedua anak kembar mereka untuk menjadi Raja pengganti. 
+                    
+                    2. Syahpri menemukan Putri Ratna Sari dalam gendang yang membuat ia menemukan cinta sejatinya. 
+                    
+                    3. Indera Bangsawan mampu mengalahkan raksasa perempuan dalam gua dan mendapatkan hadiah ajimat dan buluh perindu. Hal ini membuat Indera Bangsawan mendapatkan tahta sebagai Raja karena telah berhasil membawa buluh perindu. 
+                    
+                    </p>
+
+            </div>
+            <div class="sub-section">
+                <h3>Evaluasi : </h3>
+                <p>Maksud dari evaluasi : Di dalam bagian evaluasi, berbagai macam konflik mulai memperoleh berbagai resolusi dan juga  penyelesaian yang dilakukan oleh peran tokoh yang sangat sentral. Evaluasi dapat membuat teks seakan mendekati akhir cerita ataupun akhir dari teks tersebut.
+
+                    <h4>Jawaban :</h4> 
+                    
+                    Saudara kembar, Syahpri dan Indera Bangsawan berhasil menyelesaikan sayembara dengan kerja keras. Terpisahkan oleh badai tak menjadi penghalang mereka untuk mencapai tujuan nya. Alhasil mereka mendapatkan buluh perindu dan ajimat tersebut. Dengan tali persaudaraan mereka yang kuat, Indera Bangsawan dan Syahpri menolong saudara mereka yang diserang oleh Buraksa yang menyebabkan sakit keras. Mereka membawakan obat untuk menyembuhkan mereka. Dengan demikian Indera Bangsawan mendapatkan tahtanya karena membawa buluh perindu. Sebagai balasa budi terhadap Syahpri, ia memberikan ajimat untuk membuat kedua negara hidhl damai dan saling membantu. 
+                    </p>
+            </div>
+            <div class="sub-section">
+                <h3> Resolusi : </h3>
+                <p>Pengertian resolusi :  resolusi menjadi bagian dari teks hikayat yang berisi mengenai berbagai  macam solusi dari suatu masalah yang dialami oleh tokoh atau karakter yang ada di dalam cerita. 
+
+                    <h4>Jawaban :</h4> 
+                    
+                    1. Masalah : Raja Indera Bungsu bingung memilih penerusnya, dan kedua anak lelakinya, Syahpri dan Indera Bangsawan, berangkat mencari buluh perindu.
+                    
+                    Resolusi : Indera Bangsawan berhasil mendapatkan buluh perindu dan membawanya pulang, sehingga memenangkan sayembara dan memperoleh tahta sebagai Raja.
+                    
+                    2. Masalah : Indera Bangsawan dan istrinya diserang oleh Buraksa, menyebabkan sakit keras.
+                    
+                    Resolusi: Syahpri menyusul saudaranya, membawa obat, dan menyembuhkan mereka. Dengan demikian, masalah penyakit dan serangan Buraksa diatasi.
+                    
+                    3. Masalah: Raja Indera Bungsu bingung memilih penerusnya.
+                    
+                    Resolusi: Indera Bangsawan memenangkan sayembara dengan membawa buluh perindu. Sebagai balas budi, ia memberikan ajimat kepada saudara kembarnya, mengatasi dilema penerus kerajaan.
+                    Pembangunan Kerajaan dan Kedamaian. 
+                    
+                     </p>
+            </div>
+            <div class="sub-section">
+                <h3> Koda : </h3>
+                <p>Pengertian Koda : Koda adalah bagian akhir dari penulisan teks hikayat. Pada bagian ini, kita bisa sebut dengan  kesimpulan
+
+                    <h4>Jawaban :</h4> 
+                    Inti kesimpulan dari cerita ini adalah bahwa melalui ujian, petualangan, dan nilai-nilai seperti keluarga, persaudaraan, dan keberanian, tokoh utama berhasil mengatasi rintangan dan menciptakan sebuah narasi yang penuh dengan pesan moral tentang kebaikan hati dan kerjasama. Cerita ini menginspirasi pembaca untuk menemukan keberanian dan kebaikan dalam menghadapi tantangan hidup serta menghargai nilai-nilai persaudaraan dan kebijaksanaan untuk mencapai kedamaian dan kebahagiaan.</p>
+            </div>
+            <div class="sub-section">
+            <h3>Kaidah Kebahasaan</h3>
+            <p>Kata kata arkais : "Ajimat", "Sayembara",  "Buraksa"<br>
+            Konjungsi :  Dan, hingga, sehingga, yang, sampai, karena, ketika.<br>
+            Majas : "Buluh perindu"<br>
+               "Dalam gendang, bersembunyi seorang Putri Ratna Sari yang diculik oleh garuda. "<br>
+               "Mereka yang diserang oleh Buraksa hingga mereka sakit keras. "<br>
+               "Raja sangat terpesona dengan buluh perindu"<br>
+
+                Anonim : -<br>
+                Pralogis : -<br>
+                Bahasa statis : -<br>
+                Istanasentris : Di sebuah kerajaan.</p>
+                </div>
+            <div class="sub-section">
+                <h3>Unsur intrinsik</h3> 
+
+                 <p><h4>Tema :</h4> Persaudaraan. 
+
+                 <h4>Latar :</h4> 
+                 <h5>Latar tempat :</h5> Disebuah kerajaan<br>
+                 <h5>Latar waktu :</h5> -<br>
+                <h5>Latar suasana :</h5> Magis, Petualangan, Emosional, Penuh kasih sayang, damai dan membantu. <br>
+
+                <h5>Alur :</h5> Menggunakan alur maju<br>
+
+                <h4>Tokoh :</h4>
+                 - Raja Indera Bungsu<br>
+                 - Syahpri<br>
+                 - Putri Ratna Sari<br>
+                 - Indera Bangsawan<br>
+                 - Raksasa Perempuan<br>
+                 - Buraksa<br>
+
+                <h4>Watak/Penokohan :</h4> 
+
+                <h5>1. Raja Indera Bungsu :</h5>
+                -Penuh kasih sayang terhadap kedua anaknya.<br>
+                -Penuh pertimbangan dan bijaksana, terlihat dari pengadopsian sayembara untuk menentukan pewaris kerajaan.<br>
+
+                <h5>2. Syahpri :</h5> 
+                 - Petualang dan berani, mencari buluh perindu untuk memenangkan sayembara.<br>
+                 - Bertanggung jawab, terlihat dari upayanya membantu saudaranya, Indera Bangsawan, saat mereka diserang oleh Buraksa.<br>
+                 - Cinta dan setia, menikahi Putri Ratna Sari setelah menyelamatkannya.<br>
+
+                <h5>3. Indera Bangsawan :</h5>
+                 - Pemberani dan kuat, berhasil mengalahkan raksasa perempuan dan mendapatkan ajimat.<br>
+                 - Setia kepada saudaranya, menunjukkan dedikasi dengan memberikan ajimat kepada Syahpri sebagai balas budi.<br>
+
+                 <h5>4. Putri Ratna Sari :</h5>
+                 -Mungkin memiliki sifat penyabar dan penuh kasih, meskipun deskripsi karakternya tidak terlalu mendalam dalam teks.<br>
+
+                 <h5>5. Raksasa Perempuan :</h5>
+                -Antagonis yang kuat dan menantang.<br>
+                 Meskipun jahat, memberikan hadiah kepada Indera Bangsawan setelah dikalahkan.<br>
+
+                <h5>6. Buraksa :</h5>
+                -Dijelaskan sebagai musuh yang menyebabkan sakit keras pada Indera dan istrinya.<br>
+                -Menunjukkan sifat konflik dan bahaya dalam cerita.<br>
+
+                <h4>Sudut pandang :</h4> Menggunakan sudut pandang orang ketiga. <br>
+
+                <h4>Gaya bahasa :</h4> Menggunakan bahasa baku<br>
+
+                <h4>Amanat :</h4> Keberanian dan ketangguhan adalah kualitas yang penting dalam menghadapi cobaan dan rintangan dalam hidup.<br>
+                </p>
+
+            </div>
+            <div class="sub-section">
+                <h3>Unsur Ekstrinsik : </h3>
+                  Bernilai sejarah dan budaya, bernilai moral, bernilai sosial.<br>
+            </div>
+
+        </section>
+    </main>
+    <section id="kelompok">
+        <footer>
+            <h1>Anggota Kelompok :</h1>
+            <ul>
+                <li>1. Komang Niki Nugraha (22)</li>
+                <li>2. Made Hartanadi Darmaja (24)</li>
+                <li>3. I Putu Meisya Tyamiga Karina (26)</li> 
+                <li>4. Putu Surya Natha Putra (28)</li>
+                <li>5. Raffi Azka Putra Arifin (30)</li><hr>
+            </ul>
+        </footer>
+    </section>
+</body>
+</html>
